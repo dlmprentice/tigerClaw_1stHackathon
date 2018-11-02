@@ -14,6 +14,10 @@
 		525B1011218BBABF0025729D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 525B100F218BBABF0025729D /* LaunchScreen.storyboard */; };
 		525B101C218BBABF0025729D /* tigerClawTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525B101B218BBABF0025729D /* tigerClawTests.swift */; };
 		525B1027218BBABF0025729D /* tigerClawUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525B1026218BBABF0025729D /* tigerClawUITests.swift */; };
+		526B74D4218CBE3B00259D61 /* ViewControllerTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526B74D3218CBE3B00259D61 /* ViewControllerTwo.swift */; };
+		526B74D6218CEF0E00259D61 /* Coding Dojo.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 526B74D5218CEF0E00259D61 /* Coding Dojo.m4a */; };
+		526B74D9218CEF9700259D61 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 526B74D8218CEF9700259D61 /* AVFoundation.framework */; };
+		526B74DB218CF37400259D61 /* tiger_drums.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 526B74DA218CF37400259D61 /* tiger_drums.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +51,10 @@
 		525B1022218BBABF0025729D /* tigerClawUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tigerClawUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		525B1026218BBABF0025729D /* tigerClawUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tigerClawUITests.swift; sourceTree = "<group>"; };
 		525B1028218BBABF0025729D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		526B74D3218CBE3B00259D61 /* ViewControllerTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerTwo.swift; sourceTree = "<group>"; };
+		526B74D5218CEF0E00259D61 /* Coding Dojo.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Coding Dojo.m4a"; path = "../../../Downloads/Coding Dojo.m4a"; sourceTree = "<group>"; };
+		526B74D8218CEF9700259D61 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		526B74DA218CF37400259D61 /* tiger_drums.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = tiger_drums.mp3; path = ../../../Downloads/tiger_drums.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				526B74D9218CEF9700259D61 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,10 +86,14 @@
 		525B0FFA218BBABE0025729D = {
 			isa = PBXGroup;
 			children = (
+				526B74DA218CF37400259D61 /* tiger_drums.mp3 */,
+				526B74D5218CEF0E00259D61 /* Coding Dojo.m4a */,
+				526B74D3218CBE3B00259D61 /* ViewControllerTwo.swift */,
 				525B1005218BBABE0025729D /* tigerClaw */,
 				525B101A218BBABF0025729D /* tigerClawTests */,
 				525B1025218BBABF0025729D /* tigerClawUITests */,
 				525B1004218BBABE0025729D /* Products */,
+				526B74D7218CEF9700259D61 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -123,6 +136,14 @@
 				525B1028218BBABF0025729D /* Info.plist */,
 			);
 			path = tigerClawUITests;
+			sourceTree = "<group>";
+		};
+		526B74D7218CEF9700259D61 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				526B74D8218CEF9700259D61 /* AVFoundation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,7 +252,9 @@
 			files = (
 				525B1011218BBABF0025729D /* LaunchScreen.storyboard in Resources */,
 				525B100E218BBABF0025729D /* Assets.xcassets in Resources */,
+				526B74DB218CF37400259D61 /* tiger_drums.mp3 in Resources */,
 				525B100C218BBABE0025729D /* Main.storyboard in Resources */,
+				526B74D6218CEF0E00259D61 /* Coding Dojo.m4a in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,6 +281,7 @@
 			files = (
 				525B1009218BBABE0025729D /* ViewController.swift in Sources */,
 				525B1007218BBABE0025729D /* AppDelegate.swift in Sources */,
+				526B74D4218CBE3B00259D61 /* ViewControllerTwo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -435,6 +459,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6JDY8K98KC;
 				INFOPLIST_FILE = tigerClaw/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -453,6 +478,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6JDY8K98KC;
 				INFOPLIST_FILE = tigerClaw/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
